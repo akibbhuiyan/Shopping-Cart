@@ -25,11 +25,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" id="minusBtn"><i class="fas fa-minus"></i></button>
-                           <input id="iphoneCount" type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default" id="plusBtn"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handlePtoductChange('phone',false)"><i class="fas fa-minus"></i></button>
+                           <input id="phoneCount" type="text" class="form-control text-center" value="1">
+                           <button class="btn btn-default" onclick="handlePtoductChange('phone',true)"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$ <span id="iphoneRate">1219</span></h5>
+                        <h5>$ <span id="phoneTotal">1219</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -43,12 +43,12 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"  id="coverminusBtn"><i class="fas fa-minus"></i></button>
-                           <input type="text" id="coverCount"class="form-control text-center" value="1">
-                           <button class="btn btn-default" id="coverplusBtn"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="handlePtoductChange('case',false)"><i class="fas fa-minus"></i></button>
+                           <input type="text" id="caseCount"class="form-control text-center" value="1">
+                           <button class="btn btn-default" onclick="handlePtoductChange('case',true)"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$ <span id="coverRate">59</span></h5>
+                        <h5>$ <span id="caseTotal">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -78,7 +78,8 @@
       </div>
    </section>
 
-   <script src="js/script.js"></script>
+   <script src="js/index.js"></script>
+   <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
